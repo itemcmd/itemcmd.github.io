@@ -170,7 +170,7 @@ body {
   .menu-bar-item {
     width: 500px;
     min-height: 20px;
-  
+    background-color:gray;
     border: 2px solid purple;
   }
   
