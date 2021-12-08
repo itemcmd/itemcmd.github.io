@@ -1,176 +1,251 @@
-body {
-    margin: 0;
-    padding: 0
-  }
-  
-  .location {
-    background-color: magenta;
-    height: 20px;
-  
-  }
-  
-  .panel-row-name-item {
-    background-color: magenta;
-    height: 20px;
-    border: 1px solid;
-  }
-  
-  .panel-row-type-item {
-    background-color: magenta;
-    height: 20px;
-    border: 1px solid;
-  }
-  
-  .location-info {
-    background-color: orange;
-    height: 20px;
-  
-  }
-  
-  .panel-tabs {
-    background-color: #F4C430; /*"Saffron"*/
-    height: 20px;
-  
-  }
-  
-  .panel-info {
-    background-color: red;
-    height: 20px;
-  
-  }
-  
-  .panel-path {
-    background-color: #2E8B57; /*seagreen*/
-    height: 20px;
-  
-  }
-  
-  .panel-row {
-    min-height: 200px;
-    border: 2px solid black;
-    background-color: #00FFFF; /*aqua*/
-    display: flex;
-    align-items: center;
-    padding: 10px;
-  
-    column-gap: 5px;
-  }
-  
-  .item {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 100%;
-  
-    align-self: stretch;
-    border: 2px solid blue;
-  }
-  
-  .panel-row-name {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 50%;
-  
-    align-self: stretch;
-    border: 2px solid blue;
-  }
-  
-  .panel-row-type {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 10%;
-  
-    align-self: stretch;
-    border: 2px solid blue;
-  }
-  
-  .panel-row-size {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 10%;
-  
-    align-self: stretch;
-    border: 2px solid blue;
-  }
-  
-  .panel-row-date {
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 10%;
-  
-    align-self: stretch;
-    border: 2px solid blue;
-  }
-  
-  
-  
-  .column2 {
-    /*margin-top: 30px;*/
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-  
-    border: 2px solid red;
-    padding: 30px 10px 30px;
-  }
-  
-  .row {
-    min-height: 300px;
-    border: 2px solid black;
-    background-color: yellow;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-  
-    column-gap: 5px;
-  }
-  
-  .menu-bar {
-    min-height: 20px;
-    height: 20px;
-    border: 2px solid black;
-    background-color: blue;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-  
-    column-gap: 15px;
-  }
-  
-  .promt-line {
-    min-height: 20px;
-    height: 20px;
-    border: 2px solid black;
-    background-color: blue;
-    display: flex;
-    align-items: center;
-    padding: 10px;
-  
-    column-gap: 15px;
-  }
-  
-  .panel {
-    padding: 5px;
-    flex-grow: 1;
-    flex-shrink: 1;
-    flex-basis: 100%;
-    /*background-color:gray;*/
-    align-self: stretch;
-    border: 2px solid green;
-  
-  
-  }
-  
-  .middle {
-    width: 100px;
-    min-height: 300px;
-  
-    border: 2px solid purple;
-  }
-  
-  .menu-bar-item {
-    width: 500px;
-    min-height: 20px;
-    background-color:gray;
-    border: 2px solid purple;
-  }
-  
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.panel {
+  padding: 5px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  /*background-color:gray;*/
+  align-self: stretch;
+  border: 2px solid green;
+
+
+}
+
+.panel__location {
+  background-color: magenta;
+  height: 20px;
+
+}
+
+.head-item {
+  text-align: center;
+  font: bold 0.8em Arial;
+  color: white;
+}
+
+.head-item__name {
+  background-color: gray;
+  height: 20px;
+  border: 1px solid;
+}
+
+.head-item__type {
+  background-color: gray;
+  height: 20px;
+  border: 1px solid;
+}
+
+.head-item__size {
+  background-color: goldenrod;
+  height: 20px;
+  border: 1px solid;
+}
+
+.head-item__date {
+  background-color: gray;
+  height: 20px;
+  border: 1px solid;
+}
+
+.item__name {
+  background-color: magenta;
+  height: 20px;
+  border: 1px solid;
+}
+
+.item__type {
+  background-color: darkkhaki;
+  height: 20px;
+  border: 1px solid;
+}
+
+.item__size {
+  background-color: mediumseagreen;
+  height: 20px;
+  border: 1px solid;
+}
+
+.item__date {
+  background-color: bisque;
+  height: 20px;
+  border: 1px solid;
+}
+
+.panel__location {
+  background-color: red;
+  height: 20px;
+
+}
+
+.panel__locationInfo {
+  background-color: orange;
+  height: 20px;
+
+}
+
+.panel__tabs {
+  background-color: #F4C430;
+  /*"Saffron"*/
+  height: 20px;
+
+}
+
+.panel__path {
+  background-color: #2E8B57;
+  /*seagreen*/
+  height: 20px;
+
+}
+
+.panel__cols {
+  min-height: 200px;
+  border: 2px solid black;
+  background-color: #00FFFF;
+  /*aqua*/
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  column-gap: 5px;
+}
+
+.item {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+
+  align-self: stretch;
+  border: 2px solid blue;
+}
+
+.panel__name {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 50%;
+
+  align-self: stretch;
+  border: 2px solid blue;
+}
+
+.panel__type {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 10%;
+
+  align-self: stretch;
+  border: 2px solid blue;
+}
+
+.panel__size {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 10%;
+
+  align-self: stretch;
+  border: 2px solid blue;
+}
+
+.panel__date {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 10%;
+
+  align-self: stretch;
+  border: 2px solid blue;
+}
+
+
+
+.column2 {
+  /*margin-top: 30px;*/
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid red;
+  padding: 30px 10px 30px;
+}
+
+.row {
+  min-height: 300px;
+  border: 2px solid black;
+  background-color: yellow;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  column-gap: 5px;
+}
+
+.menu-main {
+  min-height: 20px;
+  height: 20px;
+  border: 2px solid black;
+  background-color: magenta;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  column-gap: 15px;
+}
+
+.promt-line {
+  min-height: 20px;
+  height: 20px;
+  border: 2px solid black;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  column-gap: 15px;
+}
+
+.icon-bar-top {
+  min-height: 20px;
+  height: 20px;
+  border: 2px solid black;
+  background-color: cyan;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  column-gap: 15px;
+}
+
+.icon-bar-top__item {
+  width: 500px;
+  min-height: 20px;
+
+  border: 2px solid purple;
+}
+
+.icon-bar-middle {
+  width: 100px;
+  min-height: 300px;
+
+  border: 2px solid purple;
+}
+
+.menu-fn {
+  min-height: 20px;
+  height: 20px;
+  border: 2px solid black;
+  background-color: blue;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  column-gap: 15px;
+}
+
+.menu-fn__item {
+  width: 500px;
+  min-height: 20px;
+
+  border: 2px solid purple;
+}
